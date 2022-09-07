@@ -1,3 +1,13 @@
+/* Styling for larger devices */
+@media only screen and (min-width: 700px) {
+}
+
+@font-face {
+  font-family: tech-font;
+  src: url(../font/techno_various-webfont.woff) format("woff"),
+    url(../font/techno_various-webfont.woff2) format("woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +16,33 @@
   /* border: 1px solid red; */
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  
+}
+
+.background-img > img {
+  width: 100%;
+}
+
+h1 {
+  font-family: tech-font;
+  font-size: 60px;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
 footer {
   display: flex;
   justify-content: center;
+  margin-top: auto;
 }
 
 footer > a {
@@ -22,7 +52,7 @@ footer > a {
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 5\px;
+  gap: 8px;
 }
 
 footer > a > img {
@@ -30,6 +60,4 @@ footer > a > img {
   height: 35px;
 }
 
-/* Styling for larger devices */
-@media only screen and (min-width: 700px) {
-}
+
