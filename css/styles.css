@@ -1,14 +1,35 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  /* border: 1px solid red; */
 }
 
 body {
-    min-height: 100vh;
+  min-height: 100vh;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer > a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5\px;
+}
+
+footer > a > img {
+  width: auto;
+  height: 35px;
 }
 
 /* Styling for larger devices */
 @media only screen and (min-width: 700px) {
-
 }
