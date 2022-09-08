@@ -1,15 +1,21 @@
 /* Styling for larger devices */
-@media only screen and (min-width: 700px) {
-
+@media screen and (min-width: 805px) {
   .logo {
     top: 100px;
     max-width: 40%;
   }
 
-  .background-img {
+  .content {
+    flex-direction: row;
+  }
+
+  .left {
     max-width: 40%;
   }
 
+  .right {
+    max-width: 60%;
+  }
 }
 
 @font-face {
@@ -28,7 +34,6 @@
 
 .logo {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 8px;
   filter: invert(100%);
@@ -43,7 +48,6 @@
   width: 100%;
 }
 
-
 .logo > h1 {
   font-family: tech-font;
   font-size: 60px;
@@ -53,6 +57,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -75,5 +84,3 @@ footer > a > img {
   width: auto;
   height: 35px;
 }
-
-
