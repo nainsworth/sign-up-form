@@ -1,5 +1,15 @@
 /* Styling for larger devices */
 @media only screen and (min-width: 700px) {
+
+  .logo {
+    top: 100px;
+    max-width: 40%;
+  }
+
+  .background-img {
+    max-width: 40%;
+  }
+
 }
 
 @font-face {
@@ -21,14 +31,20 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  
+  filter: invert(100%);
+  position: absolute;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.775);
+  padding: 10px;
+  text-shadow: 2px 2px white;
 }
 
 .background-img > img {
   width: 100%;
 }
 
-h1 {
+
+.logo > h1 {
   font-family: tech-font;
   font-size: 60px;
 }
