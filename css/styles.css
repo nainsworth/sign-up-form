@@ -18,6 +18,18 @@
   }
 }
 
+/* Style for Smaller devices */
+@media screen and (max-width: 805px) {
+  .right {
+    position: relative;
+    top: -300px;
+    background-color: rgba(255, 255, 255, 0.775);
+    margin: 16px;
+    border-radius: 8px;
+    padding: 8px;
+  }
+}
+
 @font-face {
   font-family: tech-font;
   src: url(../font/techno_various-webfont.woff) format("woff"),
@@ -62,6 +74,24 @@ body {
 main {
   display: flex;
   flex-direction: column;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.user-input > label {
+  font-size: 12px;
+}
+
+.user-input > input {
+  height: 32px;
+  font-size: 16px;
+  padding: 8px;
 }
 
 footer {
