@@ -1,8 +1,15 @@
 /* Styling for larger devices */
-@media screen and (min-width: 805px) {
+@media screen and (min-width: 1360px) {
   .logo {
     top: 100px;
-    max-width: 40%;
+    width: 500px;
+  }
+
+  body {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 50px;
+    border-radius: 30px;
   }
 
   .content {
@@ -10,20 +17,25 @@
   }
 
   .left {
-    max-width: 40%;
+    width: 500px;
   }
 
   .right {
     max-width: 60%;
+    height: 100%;
   }
 }
 
 /* Style for Smaller devices */
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 1360px) {
+  .logo {
+    width: 100%;
+  }
+
   .right {
     position: relative;
-    top: -300px;
-    background-color: rgba(255, 255, 255, 0.775);
+    top: -100px;
+    background-color: rgba(255, 255, 255, 0.96);
     margin: 16px;
     border-radius: 8px;
     padding: 8px;
@@ -44,13 +56,16 @@
   /* border: 1px solid red; */
 }
 
+html {
+  height: 100%;
+}
+
 .logo {
   display: flex;
   justify-content: center;
   gap: 8px;
   filter: invert(100%);
   position: absolute;
-  width: 100%;
   background-color: rgba(255, 255, 255, 0.775);
   padding: 10px;
   text-shadow: 2px 2px white;
@@ -68,12 +83,24 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
+  /* background-color: #00201e; */
 }
 
 main {
   display: flex;
   flex-direction: column;
+}
+
+
+.img-caption {
+  position: absolute;
+  bottom: 200px;
+  margin: 0 auto;
+}
+
+.right {
+  background-color: white;
 }
 
 .user-input {
