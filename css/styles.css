@@ -121,6 +121,22 @@ button {
   height: 50px;
   width: 200px;
   margin: 25px;
+  background-color: rgb(18, 126, 105);
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 0 8px grey;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(30, 173, 144);
+}
+
+button:focus {
+  background-color: rgb(35, 216, 180);
+  color: black;
 }
 
 footer {
