@@ -15,28 +15,32 @@
           <img src="./img/logo.png" alt="Logo" />
           <h1 class="title">NEWAGE</h1>
         </div>
-          <img class="background-img" src="./img/computer-img.jpg" alt="PC Image" />
-          <div class="img-caption">
-            Photo by
-            <a
-              href="https://unsplash.com/@avivrchmdn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >
-              Aviv Rachmadian
-            </a>
-            on
-            <a
-              href="https://unsplash.com/s/photos/custom-pc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >
-              Unsplash
-            </a>
-          </div>
+        <img
+          class="background-img"
+          src="./img/computer-img.jpg"
+          alt="PC Image"
+        />
+        <div class="img-caption">
+          Photo by
+          <a
+            href="https://unsplash.com/@avivrchmdn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >
+            Aviv Rachmadian
+          </a>
+          on
+          <a
+            href="https://unsplash.com/s/photos/custom-pc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >
+            Unsplash
+          </a>
+        </div>
       </div>
 
       <div class="right">
         <div class="signup-text">
           <p>
-            THIS IS NOT A REAL ONLINE SERVICE! However, do
-            consider signing up for our latest tech updates on custom computers.
+            THIS IS NOT A REAL ONLINE SERVICE! However, do consider signing up
+            for our latest tech updates on custom computers.
           </p>
           <p>Sign up <em>now</em> to get started!</p>
         </div>
@@ -46,27 +50,51 @@
             <div class="inputs">
               <div class="user-input">
                 <label for="firstName">FIRST NAME</label>
-                <input type="text" name="user-fName" id="firstName" />
+                <input type="text" name="user-fName" id="firstName" required />
               </div>
               <div class="user-input">
                 <label for="lastName">LAST NAME</label>
-                <input type="text" name="user-lName" id="lastName" />
+                <input type="text" name="user-lName" id="lastName" required />
               </div>
               <div class="user-input">
                 <label for="email">EMAIL</label>
-                <input type="email" name="user-email" id="email" />
+                <input
+                  type="email"
+                  name="user-email"
+                  id="email"
+                  placeholder="user@email.com"
+                  required
+                />
               </div>
               <div class="user-input">
                 <label for="phone">PHONE NUMBER</label
-                  ><input type="tel" name="user-phone" id="phone" />
+                ><input
+                  type="tel"
+                  name="user-phone"
+                  id="phone"
+                  minlength="10"
+                  maxlength="10"
+                  placeholder="123-456-7809"
+                  required
+                />
               </div>
               <div class="user-input">
                 <label for="password">PASSWORD</label>
-                <input type="password" name="user-password" id="password" />
+                <input
+                  type="password"
+                  name="user-password"
+                  id="password"
+                  required
+                />
               </div>
               <div class="user-input">
                 <label for="confirmPassword">CONFIRM PASSWORD</label>
-                <input type="password" name="user-confirmed" id="confirmPassword" />
+                <input
+                  type="password"
+                  name="user-confirmed"
+                  id="confirmPassword"
+                  required
+                />
               </div>
             </div>
           </div>
