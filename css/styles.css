@@ -68,15 +68,22 @@ body {
   width: 700px;
 }
 
-form > h3 {
-  padding-left: 25px;
+.card {
+  box-shadow: 0 0 24px grey;
+  margin: 8px;
+  border-radius: 8px;
+  padding: 25px
+}
+
+.card > h3 {
   font-size: 26px;
+  padding-bottom: 8px;
 }
 
 .inputs {
   display: grid;
   grid-template-columns: repeat(2, 300px);
-  grid-template-rows: repeat(3, 90px);
+  grid-template-rows: repeat(3, 70px);
   justify-content: space-around;
   align-items: center;
 }
@@ -84,9 +91,11 @@ form > h3 {
 .user-input {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
 .user-input > label {
+  font-weight: 600;
   font-size: 12px;
 }
 
@@ -94,6 +103,17 @@ form > h3 {
   height: 32px;
   font-size: 16px;
   border-radius: 8px;
+  outline: none;
+  border: 1px solid lightgrey;
+}
+
+.user-input > input:focus {
+  border: 3px solid rgb(73, 182, 255);
+  box-shadow: 0 0 6px grey;
+}
+
+.user-input > input:invalid {
+  border: 3px solid red;
 }
 
 button {
