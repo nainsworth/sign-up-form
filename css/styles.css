@@ -125,9 +125,9 @@ body {
   box-shadow: 0 0 6px grey;
 }
 
-.user-input > input:invalid {
+/* .user-input > input:invalid {
   border: 3px solid red;
-}
+} */
 
 button {
   border-radius: 8px;
@@ -153,8 +153,20 @@ button:focus {
 }
 
 .login {
-  flex: .5;
+  flex: 0.5;
   padding-left: 25px;
+  font-weight: bold;
+}
+
+.login > a {
+  text-decoration: none;
+  color: rgb(18, 126, 105);
+  font-weight: bold;
+}
+
+.login > a:hover {
+  text-decoration: underline;
+  color: rgb(30, 173, 144);
 }
 
 footer {
@@ -185,4 +197,3 @@ footer > a > img {
   src: url(../font/techno_various-webfont.woff) format("woff"),
     url(../font/techno_various-webfont.woff2) format("woff2");
 }
-
