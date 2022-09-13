@@ -64,15 +64,27 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 700px;
+}
+
+.signup-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 26px;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 0 30px;
+  flex: 1;
 }
 
 .card {
   box-shadow: 0 0 24px grey;
   margin: 8px;
   border-radius: 8px;
-  padding: 25px
+  padding: 25px;
+  flex: 1;
 }
 
 .card > h3 {
@@ -138,6 +150,11 @@ button:hover {
 button:focus {
   background-color: rgb(35, 216, 180);
   color: black;
+}
+
+.login {
+  flex: .5;
+  padding-left: 25px;
 }
 
 footer {
