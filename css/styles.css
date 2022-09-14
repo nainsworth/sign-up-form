@@ -201,11 +201,8 @@ footer > a > img {
 /* small devices */
 @media screen and (max-width: 700px) {
   .inputs {
-    display: grid;
     grid-template-columns: repeat(1, 90%);
     grid-template-rows: repeat(6, 60px);
-    justify-content: space-around;
-    align-items: center;
   }
 
   button {
@@ -264,6 +261,10 @@ footer > a > img {
 
   .card {
     box-shadow: none;
+  }
+
+  .inputs {
+    grid-template-columns: repeat(2, 45%);
   }
 
   footer {
