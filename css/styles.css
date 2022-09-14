@@ -218,6 +218,12 @@ footer > a > img {
   }
 }
 
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  .inputs {
+    grid-template-columns: repeat(2, 45%);
+  }
+}
+
 /* medium devices */
 @media screen and (max-width: 1200px) {
   .content {
@@ -263,9 +269,7 @@ footer > a > img {
     box-shadow: none;
   }
 
-  .inputs {
-    grid-template-columns: repeat(2, 45%);
-  }
+  
 
   footer {
     position: st;
