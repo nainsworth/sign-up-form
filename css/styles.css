@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 8px;
   background-color: #100a13;
 }
 
@@ -198,7 +198,32 @@ footer > a > img {
     url(../font/techno_various-webfont.woff2) format("woff2");
 }
 
-@media only screen and (max-width: 1200px) {
+
+/* small devices */
+@media screen and (max-width: 700px) {
+  .inputs {
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    grid-template-rows: repeat(6, 60px);
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  button {
+    margin: -25px 0 12px 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .login {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+/* medium devices */
+@media screen and (max-width: 1200px) {
   .content {
     flex-direction: column;
   }
@@ -242,25 +267,7 @@ footer > a > img {
     box-shadow: none;
   }
 
-  .inputs {
-    display: grid;
-    grid-template-columns: repeat(1, 90%);
-    grid-template-rows: repeat(6, 60px);
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  button {
-    margin: -25px 0 12px 0;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  .login {
-    text-align: center;
-    padding: 0;
-  }
+ 
 
   footer {
     position: st;
