@@ -209,7 +209,7 @@ footer > a > img {
 
   .background-img {
     width: 100%;
-    height: 100vh;
+    height: 300px;
     object-fit: cover;
     object-position: 100% 0;
   }
@@ -217,21 +217,56 @@ footer > a > img {
   .logo {
     width: 100%;
     top: 0;
+    padding-bottom: 0;
   }
 
   .img-caption {
-    top: 805px;
     background-color: rgba(0, 0, 0, 0.775);
-    padding: 8px;
+    padding: 4px;
     width: 100%;
+    top: 74px;
+    text-align: right;
+  }
+
+  .img-caption,
+  .img-caption > a {
+    font-size: 8px;
+  }
+
+  .right {
+    width: 100%;
+    padding: 24px 0;
+  }
+
+  .card {
+    box-shadow: none;
+  }
+
+  .inputs {
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    grid-template-rows: repeat(6, 60px);
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  button {
+    margin: -25px 0 12px 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .login {
     text-align: center;
+    padding: 0;
   }
 
   footer {
-    position: absolute;
-    bottom: 0;
+    position: st;
+    bottom: -100vh;
     background-color: rgba(255, 255, 255, 0.775);
     width: 100%;
+    padding: 8px;
   }
-
 }
