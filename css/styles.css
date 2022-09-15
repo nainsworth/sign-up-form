@@ -125,9 +125,16 @@ body {
   box-shadow: 0 0 6px grey;
 }
 
-/* .user-input > input:invalid {
+.error {
   border: 3px solid red;
-} */
+}
+
+.error-msg {
+  color: red;
+  margin-bottom: -15px;
+  padding-left: 10px;
+  height: 16px;
+}
 
 button {
   border-radius: 8px;
@@ -205,8 +212,12 @@ footer > a > img {
     grid-template-rows: repeat(6, 60px);
   }
 
+  .error-msg {
+    padding-left: 25px;
+  }
+
   button {
-    margin: -25px 0 12px 0;
+    margin: -8px 0 12px 0;
     position: relative;
     left: 50%;
     transform: translate(-50%);
