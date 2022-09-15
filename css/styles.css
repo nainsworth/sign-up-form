@@ -111,7 +111,7 @@ body {
   font-size: 12px;
 }
 
-.user-input > input {
+input {
   height: 32px;
   font-size: 16px;
   border-radius: 6px;
@@ -120,11 +120,12 @@ body {
   border: 1px solid lightgrey;
 }
 
-.user-input > input:focus {
+input:focus {
   border: 3px solid rgb(73, 182, 255);
   box-shadow: 0 0 6px grey;
 }
 
+.error:focus,
 .error {
   border: 3px solid red;
 }
@@ -154,7 +155,7 @@ button:hover {
   background-color: rgb(30, 173, 144);
 }
 
-button:focus {
+button:active {
   background-color: rgb(35, 216, 180);
   color: black;
 }
