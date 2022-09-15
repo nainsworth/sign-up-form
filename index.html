@@ -53,11 +53,11 @@
             <div class="inputs">
               <div class="user-input">
                 <label for="firstName">FIRST NAME</label>
-                <input type="text" name="user-fName" id="firstName" required />
+                <input type="text" name="user-fName" id="firstName" pattern="[A-Za-z]+" required />
               </div>
               <div class="user-input">
                 <label for="lastName">LAST NAME</label>
-                <input type="text" name="user-lName" id="lastName" required />
+                <input type="text" name="user-lName" id="lastName" pattern="[A-Za-z]+" required />
               </div>
               <div class="user-input">
                 <label for="email">EMAIL</label>
@@ -76,8 +76,9 @@
                   name="user-phone"
                   id="phone"
                   minlength="10"
-                  maxlength="10"
+                  maxlength="13"
                   placeholder="(123)456-7809"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                   required
                 />
               </div>
